@@ -26,7 +26,7 @@ test.describe('Departments API Tests (Structure: { metadata, data, error })', ()
       expect(Array.isArray(body.data.content)).toBe(true);
       expect(body.data).toHaveProperty('totalElements');
       // Mặc định server trả pageSize=50, pageNumber=0 (nếu có)
-      // Nếu endpoint không embed pageNumber/pageSize, chỉ kiểm totalElements tồn tại
+      // Nếu endpoint không embed pageNumber/pageSize, chỉ kiểm totalElements tồn tại    
     });
 
     test('TC_GET_DEPT_02 - Lọc theo tên phòng ban (name="Kỹ thuật")', async ({ request }) => {
